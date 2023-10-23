@@ -15,11 +15,12 @@ code {
 img {
   width: 20px;
   padding-left: 10px;
-  padding-top: 20px;
+
 }
 
 .on{
   background-color: green;
+
 }
 
 .off{
@@ -27,7 +28,6 @@ img {
 }
 
 .wrapper{
-  width: 50px;
-  padding: 20px;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
 }
