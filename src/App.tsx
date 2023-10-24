@@ -4,7 +4,8 @@ import './App.css';
 import {Rating} from "./components/Rating/Rating";
 
 import {Accordion} from "./components/Accordion/Accordion";
-import {Button} from "./Button";
+import {Button} from "./components/Button/Button";
+import {OnOff} from "./components/Button/OnOff";
 
 function App() {
     let [open, setOpen]=useState(false)
@@ -30,10 +31,10 @@ function App() {
     <div>
 
 
-        <Accordion title={"Menu"} open={open} openAccordion={openAccordion}/>
-        <Rating value={ratingValue} selectedStar={selectedStar}/>
-        {/*<OnOff on={on} tumbler={tumbler}/>*/}
-        <Button title={'On'}/>
+        <Accordion title={"Menu"} open={open} onChange={openAccordion}/>
+        <Rating value={ratingValue} onChange={selectedStar}/>
+        <OnOff on={on}  onChange={tumbler}/>
+        <Button title={'On'} onChange={tumbler}/>
     </div>
 
   );
