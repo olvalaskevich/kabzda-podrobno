@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #343434;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    position: relative;
+}
+
+.title:hover{
+    cursor:pointer;
+
+}
+
+.children{
+padding: 10px 0;
+
+}
+.children:hover{
+    background-color: #626161;
+    cursor:pointer;
+
+}
+
+.wrapper2{
+    width: 150px;
+    background-color: #efeeee;
+    border-radius: 5px;
+}
+
