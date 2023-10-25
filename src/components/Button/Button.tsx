@@ -1,15 +1,15 @@
 import React from 'react';
-import './index.css'
+import '../../index.css'
 
 export type BtnPropsType={
     title:string
     name?:string
-    tumbler?:()=>void
+    onChange?:()=>void
 }
 
 export const Button = (props:BtnPropsType)=> {
     return (<div>
-        <button className={props.name} onClick={props.tumbler}>{props.title}</button>
+        <button className={props.name} onClick={props.onChange}>{props.title}</button>
     </div>)
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.css'
+import '../../index.css'
 
 import type {Meta, StoryObj} from '@storybook/react';
 
@@ -8,19 +8,29 @@ import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
     component: Button,
+    argTypes:{
+        title:{
+            options: ['On', 'Off'],
+            control: { type: 'radio' },
+        },
+        name:{
+            options: ['on', 'off'],
+            control: { type: 'radio' },
+        }
+    }
 };
 
 export default meta;
 
 type Story=StoryObj<typeof Button>
 
-export const FirstStory: Story={
-    args:{
-        title:'On',
-        name:'on',
-        tumbler:()=> {}
+export const OneButton: Story= {
+    args: {
+        title: 'On',
+        onChange: () => {
         }
     }
+}
 
 
 
